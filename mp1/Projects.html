@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Resume | Chunhao Bi </title>
+    <link rel="stylesheet" href="Projects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+<header>
+    <div>
+        <h1> Chunhao Bi  </h1>
+        <p> My online resume. </p>
+    </div>
+</header>
+<div class="flex-container">
+    <nav>
+        <ul>
+            <li> <a href="home-resume.html"> Home </a> </li>
+            <li> <a href="information.html"> Info </a></li>
+            <li> <a href="education.html"> Education </a></li>
+            <li> <a href="work-experience.html"> Experience </a></li>
+            <li> <a href="Projects.html"> Projects </a></li>
+            <li> <a href="Skills.html"> Skills </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p id="page_name"> Projects </p>
+        <ul>
+            <li>
+                <div class="flex-item">
+                    <p></p>
+                    <div class="item-content">
+                        <h2>  Doodle Jump AI </h2>
+                        <h3> <a href="https://github.com/ChunhBi/Doodle-Jump-AI">Link</a></h3>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="flex-item">
+                    <p></p>
+                    <div class="item-content">
+                        <h2> Photon Mapping </h2>
+                        <h3> <a href="https://github.com/ChunhBi/CS172_Photon_Mapping">Link</a> </h3>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="flex-item">
+                    <p></p>
+                    <div class="item-content">
+                        <h2> Video Human Pose Estimation based on DEKR</h2>
+                        <h3> <a href="https://github.com/ChunhBi/CS171_VHPE_DEKR">Link</a></h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="calculator">
+                <h1>In-page Calculator</h1>
+                <br>
+                <label for="first_num"></label><input type="text" id="first_num" class="input">
+                <label for="second_num"></label><input type="text" id="second_num" class="input"><br>
+    <!--            <button onclick="addition()">+</button>-->
+    <!--            <button onclick="subtraction()">-</button>-->
+    <!--            <button onclick="multiplication()">*</button>-->
+    <!--            <button onclick="division()">/</button>-->
+    <!--            <button onclick="power()">**</button>-->
+    <!--            <button onclick="clearInput()">Clear</button>-->
+                <svg width="10%" height="50px">
+                    <a href="#" class="circle-button" onclick="addition()">
+                        <circle cx="50%"
+                                cy="50%"
+                                r="40%"/>
+                        <text   x="50%"
+                                y="50%"
+                                fill="#FFFFFF"
+                                text-anchor="middle"
+                                alignment-baseline="middle">
+                            +
+                        </text>
+                    </a>
+                </svg>
+                <svg width="10%" height="50px">
+                    <a href="#" class="circle-button" onclick="subtraction()">
+                        <circle cx="50%"
+                                cy="50%"
+                                r="40%"/>
+                        <text   x="50%"
+                                y="50%"
+                                fill="#FFFFFF"
+                                text-anchor="middle"
+                                alignment-baseline="middle">
+                            -
+                        </text>
+                    </a>
+                </svg>
+                <svg width="10%" height="50px">
+                    <a href="#" class="circle-button" onclick="multiplication()">
+                        <circle cx="50%"
+                                cy="50%"
+                                r="40%"/>
+                        <text   x="50%"
+                                y="50%"
+                                fill="#FFFFFF"
+                                text-anchor="middle"
+                                alignment-baseline="middle">
+                            *
+                        </text>
+                    </a>
+                </svg>
+                <svg width="10%" height="50px">
+                    <a href="#" class="circle-button" onclick="division()">
+                        <circle cx="50%"
+                                cy="50%"
+                                r="40%"/>
+                        <text   x="50%"
+                                y="50%"
+                                fill="#FFFFFF"
+                                text-anchor="middle"
+                                alignment-baseline="middle">
+                            /
+                        </text>
+                    </a>
+                </svg>
+                <svg width="10%" height="50px">
+                    <a href="#" class="circle-button" onclick="power()">
+                        <circle cx="50%"
+                                cy="50%"
+                                r="40%"/>
+                        <text   x="50%"
+                                y="50%"
+                                fill="#FFFFFF"
+                                text-anchor="middle"
+                                alignment-baseline="middle">
+                            **
+                        </text>
+                    </a>
+                </svg>
+                <svg width="10%" height="50px">
+                    <a href="#" class="circle-button" onclick="clearInput()">
+                        <circle cx="50%"
+                                cy="50%"
+                                r="40%"/>
+                        <text   x="50%"
+                                y="50%"
+                                fill="#FFFFFF"
+                                text-anchor="middle"
+                                alignment-baseline="middle">
+                            clear
+                        </text>
+                    </a>
+                </svg>
+    <!--            <p id="result"> </p>-->
+                <output id="result"> <br> </output>
+        </div>
+        <script src="calculator.js"></script>
+    </main>
+</div>
+
+<footer>
+    <p> All Rights Reserved by Chunhao Bi <a href="">Credits</a> &#169 </p>
+</footer>
+
+</body>
+</html>

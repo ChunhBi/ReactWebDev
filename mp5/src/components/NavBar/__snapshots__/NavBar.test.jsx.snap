@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`The NavBar component should render 1`] = `
+<div
+  className="sc-guDLey biTsvu"
+>
+  <h2
+    className="sc-dmyCSP dmoMIl"
+    id="title"
+  />
+</div>
+`;

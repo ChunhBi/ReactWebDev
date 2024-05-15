@@ -1,0 +1,32 @@
+#webpage {
+    background-color: azure;
+}
+
+#wrapper {
+    margin: 10vh 0;
+}
+header {
+    text-align: center;
+    background-color: brown;
+    color: white;
+    padding: 0 0;
+    margin: 0 0;
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+#main {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: burlywood;
+}
+footer{
+    text-align: center;
+    background-color: brown;
+    color: white;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    padding: 0 0;
+}

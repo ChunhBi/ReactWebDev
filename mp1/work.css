@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+html {
+    background-color: bisque;
+}
+
+header {
+    color: white;
+    background-color: brown;
+}
+
+nav {
+    background-color: chocolate;
+    text-align: center;
+}
+
+nav li {
+    background-color: gold;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+}
+nav a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+}
+
+main #outer-ul {
+    text-align: left;
+    padding-top: 2%;
+}
+main #outer-ul .outer-li {
+    list-style: none;
+    margin-bottom: 10%;;
+}
+main #outer-ul .flex-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+main #outer-ul .outer-li p {
+    background-color: brown;
+    flex: 2%;
+    /*border: 1px solid red;*/
+}
+main #outer-ul .item-content {
+    flex: 98%;
+    padding-left: 10%;
+}
+
+main .inner-ul {
+    list-style: disc;
+    padding-left: 3%;
+    padding-right: 10%;
+}
+main .inner-ul li{
+    /*font-weight: normal;*/
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.job-description em {
+    font-weight: normal;
+    font-size: medium;
+}
+
+
+#page_name {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: calc(4vw + 10px);
+}
+
+footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+}
+
+@media screen and (width <= 750px) {
+    header div {
+        text-align: center;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        flex-wrap: nowrap;
+        font-size: small;
+    }
+    nav li {
+        width: 15%;
+        display: inline-block;
+        /*border: 1px solid red;*/
+        padding-top: 0.8%;
+        padding-bottom: 0.8%;
+        font-size: calc(2.0vw + 1px);
+    }
+    main {
+        /*height: 90vh;*/
+    }
+}
+@media screen and (width > 750px) {
+    header div {
+        /*height:100px;*/
+        width:200px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav {
+        /*border: 1px solid red;*/
+        flex: 30%;
+    }
+    nav ul {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: larger;
+    }
+
+    nav li {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: calc(2vw + 10px);
+    }
+    main {
+        flex: 70%;
+        /*height: 90vh;*/
+    }
+}
